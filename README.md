@@ -20,7 +20,7 @@ O objetivo do projeto é demonstrar conceitos práticos de *brute-force* e paral
 
 # Principais componentes
 
-- `app_tk.py` — aplicação principal com GUI (abrir ZIP, selecionar wordlist, configurar workers, iniciar/parar ataque).
+- `app.py` — aplicação principal com GUI (abrir ZIP, selecionar wordlist, configurar workers, iniciar/parar ataque).
 - Funções úteis:
   - `analyze_zip(path)` — retorna entradas e flag de encriptação.
   - `stream_wordlist(path)` — gera senhas linha-a-linha (streaming).
@@ -59,7 +59,7 @@ git clone https://github.com/SEU_USUARIO/zip-cracker.git
 cd zip-cracker
 ```
 
-Se você recebeu apenas o arquivo `app_tk.py`, coloque-o dentro de uma pasta de projeto.
+Se você recebeu apenas o arquivo `app.py`, coloque-o dentro de uma pasta de projeto.
 
 ---
 
@@ -91,7 +91,7 @@ pip install pyzipper ttkbootstrap
 1. Execute a aplicação:
 
 ```bash
-python app_tk.py
+python app.py
 ```
 
 2. Na interface:
@@ -171,23 +171,3 @@ Você pode **Salvar Log** para auditoria.
 - Versão CLI para execução headless em servidores.
 
 ---
-
-# Licença
-
-Escolha a licença apropriada para seu uso acadêmico/profissional. Exemplo curto: **MIT License**. (Inclua um arquivo `LICENSE` se desejar.)
-
----
-
-# Contribuição
-
-1. Abra uma *issue* descrevendo o problema ou feature.  
-2. Faça um *fork*, crie uma branch, implemente e envie um pull request com descrição e testes (se aplicável).
-
----
-
-# Contato
-
-Se quiser, posso:
-- gerar um `README.md` traduzido para inglês,
-- criar `requirements.txt` e `setup.sh`/`install.ps1`,
-- adicionar o recurso de *resume* ou regras avançadas de mutação.
